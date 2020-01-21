@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>待阅</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-25.0%" y="-25.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.608649803   0 0 0 0 0.764099639   0 0 0 0 0.933565444  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="工作计划" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工作回顾-展示图标" transform="translate(-297.000000, -401.000000)">
+            <g id="待阅" transform="translate(305.500000, 409.500000)">
+                <g>
+                    <g>
+                        <g id="椭圆形">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#4B77AF" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <text id="Back复制-2" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" letter-spacing="-0.244886908" fill="#4B77AF">
+                            <tspan x="14" y="38">批阅</tspan>
+                        </text>
+                        <g id="编组-6" transform="translate(16.157895, 6.815789)" fill="#4B77AF">
+                            <path d="M16.8117625,15.2158735 C16.8117625,15.474453 16.6002605,15.6842105 16.3434255,15.6842105 L1.340785,15.6842105 C1.08220555,15.6842105 0.872448004,15.472798 0.872448004,15.2158735 C0.872448004,14.9572717 1.08386053,14.747447 1.340785,14.747447 L16.3433361,14.747447 C16.6002605,14.7473576 16.8117625,14.9572717 16.8117625,15.2158735 Z M2.59479026,13.2982884 L3.60651984,9.64516582 L12.268954,0.984297178 C12.670734,0.582517215 13.1911357,0.585849539 13.5896057,0.984297178 L15.5707064,2.96530834 C15.969154,3.36377835 15.9724863,3.88261461 15.5707064,4.28596009 L6.91299114,12.9501387 L3.2567152,13.9618012 C2.75255011,14.0675857 2.49072779,13.8056739 2.59479026,13.2982884 Z M11.2801034,3.29710949 L13.2611146,5.27646567 L14.5818558,3.95581393 C14.9250181,3.61589444 14.9022957,3.6191373 14.5818558,3.29554397 L13.2611146,1.97636828 C12.9488824,1.63978112 12.9179746,1.63978112 12.6007551,1.97636828 L11.2801034,3.29710949 Z M5.00195879,9.57527646 L6.98296996,11.5562876 L12.6007551,5.93850244 L10.6198334,3.95755837 L5.00195879,9.57527646 L5.00195879,9.57527646 Z M3.59515863,12.9614999 L6.32258818,12.2149026 L4.34166647,10.2339809 L3.59515863,12.9614999 Z" id="Fill-1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

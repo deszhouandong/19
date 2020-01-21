@@ -1,0 +1,19 @@
+$blue:#4B77AF;
+$red:#D75252;
+$brown:#FFA700;
+@mixin box-sizing {
+  box-sizing: border-box;;
+}
+@mixin ellipsis {
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+@mixin clear {
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}

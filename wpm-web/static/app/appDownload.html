@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>自动打卡下载</title>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+
+</head>
+
+<body>
+  <img src="./images/apptip_weixin.jpg" width="100%" border="0" id="toNavgiator">
+  <div id="download">
+
+    <img src="./images/logo.png" width="100%" border="0">
+    <a href="http://hongxinshop.oss.cn-east-2.jcloudcs.com/app_wps/app-release.apk" target="_blank"><img
+        src="./images/appdownload_02.png" width="100%" border="0"></a>
+
+    <!-- <a href="itms-services://?action=download-manifest&url=https://testm.hongxinshop.com/app/manifest.plist" -->
+    <a href="itms-services://?action=download-manifest&url=https://hongxinshop.oss.cn-east-2.jcloudcs.com/app_wps/app_ios/manifest.plist"
+      target="_blank"><img src="images/appdownload_03.png" width="100%" border="0"></a>
+
+
+    <img src="./images/appdownload_04.png" width="100%" border="0">
+  </div>
+
+</body>
+<script>
+  var toNavgiator = document.getElementById('toNavgiator');
+  var download = document.getElementById('download');
+  const ua = navigator.userAgent.toLowerCase();
+  // 微信、企业微信
+  if (ua.match(/MicroMessenger/i) == "micromessenger") {
+    toNavgiator.style.display = "block"
+    download.style.display = "none"
+  } else {
+    // 浏览器
+    toNavgiator.style.display = "none"
+    download.style.display = "block"
+  }
+</script>
+
+</html>

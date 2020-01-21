@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>jianzhu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="出差招待" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="访客记录-列表" transform="translate(-21.000000, -101.000000)">
+            <g id="编组-2" transform="translate(0.000000, 74.000000)">
+                <g id="jianzhu" transform="translate(21.800000, 28.000000)">
+                    <g>
+                        <polyline id="路径" stroke="#000000" points="-1.13686838e-13 14.4990619 -1.13686838e-13 2.7777689 5.37717928 0 5.37717928 14.4990619"></polyline>
+                        <polyline id="路径-2" stroke="#000000" points="3.55106872 14.4990619 3.55106872 5.94156842 8.81677392 3.18774579 13.7996653 5.25992506 13.7996653 14.4990619"></polyline>
+                        <rect id="矩形" fill="#000000" x="9.1676294" y="11.0129377" width="3" height="1"></rect>
+                        <rect id="矩形复制-9" fill="#000000" x="9.1676294" y="13.4990619" width="3" height="1"></rect>
+                        <rect id="矩形复制-10" fill="#000000" x="3.06148761" y="13.4990619" width="2.81652996" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

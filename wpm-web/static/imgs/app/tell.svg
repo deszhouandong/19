@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>yonghuming</title>
+    <desc>Created with Sketch.</desc>
+    <g id="新版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="在线考勤-登陆" transform="translate(-51.000000, -312.000000)">
+            <rect fill="#F4F4F4" x="0" y="0" width="375" height="667"></rect>
+            <g id="编组-8" transform="translate(28.000000, 303.000000)">
+                <rect id="矩形复制-2" stroke="#4B77AF" x="0.5" y="0.5" width="319" height="47" rx="20"></rect>
+                <g id="yonghuming" transform="translate(23.000000, 9.000000)">
+                    <g id="ren" transform="translate(6.000000, 4.000000)" fill="#E2E2E2">
+                        <g id="编组-2">
+                            <path d="M3,5.95580845 C3,8.99331663 5.46233284,11.4557522 8.49993078,11.4557522 C11.5375287,11.4557522 14,8.99331663 14,5.95580845 C14,2.91818779 11.5375287,0.455752212 8.49993078,0.455752212 C5.46233284,0.455752212 3,2.91818779 3,5.95580845 Z" id="Fill-1"></path>
+                            <path d="M11.1972689,12.4557522 L6.80273113,12.4557522 C3.08259384,12.4554482 0.0521099834,15.5632567 0,19.4322012 L0,19.8850023 C0,21.4557522 3.04762355,21.4557522 6.80273113,21.4557522 L11.1972689,21.4557522 C14.9659819,21.4557522 18,21.4557522 18,19.8850023 L18,19.4322012 C17.9479963,15.5632567 14.9174062,12.4554482 11.1972689,12.4557522 Z" id="Fill-2"></path>
+                        </g>
+                    </g>
+                    <rect id="矩形" x="0" y="0" width="30" height="30"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

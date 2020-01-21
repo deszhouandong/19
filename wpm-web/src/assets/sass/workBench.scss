@@ -1,0 +1,148 @@
+.workbench p,.attendanceTeam p{
+  margin:12px 0;
+}
+h3 {
+  margin: 0 !important;
+}
+.collapse-wrap{
+  background: #fff;
+}
+.confirmed {
+  color: red;
+}
+.location-name{
+  width:235px;
+  @include ellipsis;
+}
+.location-name1{
+  width:195px;
+  @include ellipsis;
+}
+/* // 10-9 Start */
+/deep/.van-steps i.van-icon-checked::before {
+  color: #4b77af !important;
+}
+
+/deep/.van-icon,
+.van-icon-phone::before {
+  vertical-align: top;
+}
+
+/* // End */
+.noData {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #000;
+  position: relative;
+  &:after{
+    position: absolute;
+    box-sizing: border-box;
+    content: " ";
+    pointer-events: none;
+    // top: -50%;
+    // right: -50%;
+    // bottom: -50%;
+    // left: -50%;
+    left:0;
+    bottom:0;
+    width:100%;
+    border: 0 solid #ebedf0;
+    -webkit-transform: scale(.5);
+    transform: scaleY(.5);
+    border-width: 1px 0;
+  }
+}
+
+.abnormalStatus {
+  color: #969799;
+}
+
+.unconfirmedStatus {
+  color: #000;
+}
+
+.dropdown-home{
+  display: block;
+  padding-left: 3px;;
+  /deep/ .van-dropdown-menu__item{
+    flex:none;
+    float: left;
+    height: 50px;
+  }
+  /deep/ .dropdown-home-dateTime{
+   position: relative;
+   left:50%;
+   margin-left: 5px;
+  }
+  .toHome{
+    float: right;
+    margin-top:10px;
+    padding:5px 17px;
+  }
+}
+
+/* // 自定义折叠下拉列表 */
+.collapse {
+  &.sub {
+    // margin: 0 16px;
+  }
+
+  &.active {
+  background: #fff;
+  font-size: 16px;
+
+    >.collapse-handler:before {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+    }
+
+    >.collapse-content {
+      display: block;
+    }
+  }
+
+  >.collapse-handler {
+    padding: 0 18px;
+    position: relative;
+
+    &:before {
+      content: "\F00A";
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      -webkit-transition: -webkit-transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s;
+      font: 18px/1 "vant-icon";
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      color: #969799;
+      height: 20px;
+      line-height: 20px;
+      margin-top: -13px;
+    }
+
+    .collapse-handler-inner {
+      padding: 12px 0;
+      border-bottom: 1px solid #ebedf0;
+
+      .name {
+        // width:62px;
+        display: inline-block;
+        // font-weight: bold;
+        margin-right: 5px;
+        color: rgb(51, 51, 51);
+        font-size: 17px;
+        min-width: 60px;
+      }
+    }
+  }
+
+  >.collapse-content {
+    padding:16px;
+    display: none;
+  }
+}

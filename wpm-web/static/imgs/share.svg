@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="67px" height="67px" viewBox="0 0 67 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>待阅</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="25" cy="25" r="25"></circle>
+        <filter x="-25.0%" y="-25.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.608649803   0 0 0 0 0.764099639   0 0 0 0 0.933565444  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="工作计划" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="工作回顾-已阅一人" transform="translate(-297.000000, -741.000000)">
+            <g id="待阅" transform="translate(305.500000, 749.500000)">
+                <g>
+                    <g id="椭圆形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#4B77AF" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <text id="Back复制-2" font-family="PingFangSC-Regular, PingFang SC" font-size="11" font-weight="normal" letter-spacing="-0.244886908" fill="#4B77AF">
+                        <tspan x="14" y="38">分享</tspan>
+                    </text>
+                    <g id="编组-6" transform="translate(16.157895, 7.815789)" fill="#4B77AF">
+                        <path d="M8.81170672,0.684210526 C9.18672852,0.684210526 9.49208523,0.987826174 9.49208523,1.36456672 C9.49208523,1.74132959 9.18855887,2.04494524 8.81170672,2.04494524 C5.14385469,2.04494524 2.17066688,5.01813305 2.17066688,8.68598508 C2.17066688,12.3538594 5.14385469,15.3253062 8.81170672,15.3253062 C12.4795811,15.3253062 15.4528582,12.3520291 15.4528582,8.68415472 C15.4528582,8.30924453 15.7563845,8.00388781 16.1331251,8.00388781 C16.5099772,8.00388781 16.8117625,8.30924453 16.8117625,8.68415472 C16.8117625,13.1020503 13.2296023,16.6842105 8.81170672,16.6842105 C4.39390038,16.6842105 0.811762522,13.1020503 0.811762522,8.68415472 C0.811762522,4.26634839 4.39390038,0.684210526 8.81170672,0.684210526 Z M12.9295804,4.08594685 C12.6760317,3.82351418 12.6796031,3.40742101 12.9385536,3.15027851 C13.1974372,2.89132798 13.6135304,2.88958691 13.8796238,3.14670709 L15.051073,4.31815635 C15.4046439,4.67172728 15.4046439,5.24308809 15.051073,5.59665903 L13.8796238,6.76810829 C13.6189322,7.02879989 13.1956961,7.02879989 12.9349822,6.76810829 C12.6742683,6.50739437 12.6742683,6.08424764 12.9349822,5.82344443 L13.1331739,5.62525274 L12.2706528,5.62525274 C9.92603552,5.62525274 9.12963038,6.62344331 9.12963038,9.64310428 C9.12963038,10.0128136 8.83141651,10.3110051 8.46172953,10.3110051 C8.09210951,10.3110051 7.79391796,10.0128136 7.79391796,9.64310428 C7.79391796,5.90915859 9.15639374,4.28956264 12.2706528,4.28956264 L13.1331739,4.28956264 L12.9295804,4.08594685 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

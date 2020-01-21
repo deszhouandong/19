@@ -1,0 +1,346 @@
+$blue:#4B77AF;
+$int:26px;
+p{ margin:0; }
+// 顶部导航 start
+.blue{
+  $h:40px;
+  background-color:$blue;width:100%;height: $h;
+  .headerUl{
+    height: $h;
+    padding-left: $int;margin:0;float: left;
+    li{ float: left;margin-right: 10.5px;line-height: 30px;font-weight: 700;color:#8bbdde ;height: 80%;
+      font-size: 17px;
+      &.active{ border-bottom: 2px solid #fff;color: #fff; }
+    }
+
+  }
+  img{ width:28px;height:28px;display: inline-block; vertical-align: middle;}
+  .close{
+    float: right;margin:0; padding-right:17px; line-height: $h;height: 100%;
+  }
+  .record{
+    float:right;margin-right: 20px;height: 100%;line-height: $h;
+  }
+}
+// 顶部导航end
+
+.line{
+  line-height: 1.2;
+}
+
+#tourShow{ // 引导图遮罩层
+  .image{
+   /deep/ .van-image__loading{
+      background: none;;
+    }
+  }
+  .click{
+    position:absolute;width:110px;height:36px;
+  }
+  .default0{ // 审批回顾导图
+    width:100%;height:100%;position:relative;
+    .image{ position:absolute;top:120px; }
+    .click{ left:100px;top:120px + 30px; }
+  }
+  .default3{ // 出差回顾
+    width:100%;height:100%;position:relative;
+    .image{ position:absolute;bottom:0px;width: 100%; }
+    .click{ left:133px;bottom:355px; }
+  }
+  .default2{ // 飞机
+    $minus:35px;
+    width:100%;height:100%;position:relative;
+    .image{ position:absolute;top:260px - $minus; }
+    .click{ left:123px;top:432px - $minus; }
+  }
+  .default1{ // 分享
+    width:100%;height:100%;position:relative;
+    .image{ position:absolute;bottom:65px;left: 40px;right: -5px; }
+    .click{ right:-5px+140px;bottom:65px+218px;width: 120px; }
+  }
+}
+
+#share{ // 分享按钮样式
+  position:fixed;right: 0px;bottom: 100px;
+  // width: 50px;height: 25px;
+  // background: #f3f3f3;
+  // background: rgb(75, 119, 175);
+  z-index: 10;border-radius: 50%;
+  // border: 1px solid #ccc;
+  display: flex; justify-content: center;align-items: center;
+  .van-image{ width: 70px;height: 70px; }
+}
+input:disabled{
+  color:#000;
+}
+
+// #visitNumber{ // 拜访次数样式
+.firstTitle{ // 周回顾title整合栏样式
+  $blue:#007AFF;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;color:$blue;
+  height: 100%;line-height: 36px;
+  vertical-align: middle;
+  // &>.visitNumber_span{
+  &>span{
+    margin-left: 4px;line-height: 36px;
+    a{ color: $blue; }
+  }
+}
+#myPopup{ // 我的弹出层样式
+  width: 100%;height: 100%;padding: 10px;box-sizing: border-box;
+}
+
+#review{ // 计划与回顾的样式
+  position: fixed;bottom:0;top:0;left: 0;right: 0;
+  &>.hHeader{
+    height: 42px;background:#ececec;
+    &>h3{
+      height: 100%;width: 50%;box-sizing: border-box;
+      margin: 0;font-size: 18px;line-height: 42px;padding: 0 $int;color:$blue;
+      &:nth-of-type(1){ float: left; }
+      &:nth-of-type(2){ float: right;text-align: right; }
+      &.active{
+        background-image: linear-gradient(182deg, rgba(130,175,216,0.04) 1%, rgba(75,119,175,0.20) 100%);
+      }
+    }
+  }
+  .but_b{ position: fixed;bottom: 0;width: 100%; box-shadow: 0 -1px 8px #3488c2;height:42px;z-index: 2;
+    & button{ width:33.333333%;float: left;height: 100%;font-size: 20px;line-height: 42px;font-weight: 600;border:0;
+      &:nth-of-type(1){ background: #fff;color: #4B77AF; }
+      &:nth-of-type(2){ background: #669BDF;color: #fff; }
+      &:nth-of-type(3){ background: #4B77AF;color: #fff;font-size:16px;font-weight:600;padding: 0; }
+      &.withdraw{ width: 100%; }
+      &#readOver{ background: #4b77af;color: #fff; }
+    }
+  }
+
+  .first{ // 从.list移动到了外面 同时组件也进行了移动
+      padding: 5px 11px 20px 11px;min-height: 120px;box-sizing: border-box;margin-bottom: 10px;
+      background: #fff;
+      .title{
+        height:36px;
+        font-size:17px;
+        font-family:PingFangSC-Semibold,PingFang SC;
+        font-weight:600;
+        color:rgba(72,72,72,1);
+        line-height:36px;
+        border-bottom: 2px solid #4B77AF;margin-bottom: 6px;
+      }
+    }
+  .list{
+    // height: 100%;box-sizing: border-box;
+    position: absolute;left: 0;right: 0;bottom: 0;
+    // top: 200px;
+    top:0px;
+    // 新增样式 end
+    width: 100%;overflow-y:scroll;
+    // background:#ececec;
+    background:rgba(244,244,244,1); // UI图样式
+    padding-bottom:64px;
+    &>textarea{ border: 0;padding: 10px 27px;width: 100%;box-sizing: border-box;height: 98px;margin-bottom: 10px; }
+  }
+  .flexbox{ // 周一~日的工作计划列表
+    display:flex;justify-content: space-between;align-items:center;height:160px;background:#fff;margin-bottom:10px;
+    .box-l{ width:42px;text-align: center; height: 64px;display:inline-block;
+      display: flex;align-items:center;flex-wrap:wrap;
+      &>div{ margin: 0 auto;width:30px;height:2px;background-image: linear-gradient(270deg, #8BBAE5 0%, #4B77AF 100%); }
+      p{ letter-spacing:-0.24px;font-size: 12px;line-height: 37px;padding-left:5px;
+        &>span{ font-size: 20px; }
+      }
+      // &:before{ content: '';display: inline-block;vertical-align:middle;height: 100%; }
+    }
+    .box-c{ width:26px;height:100%;
+      p{ height:50%;text-align: center;display:flex;align-items:center;justify-content: center;
+        &:nth-of-type(1) img{ transform: scaleY(-1); }
+      }
+    }
+    .box-r{ width:70%;height: 100%;
+      textarea{ height: 49%;box-sizing: border-box;width: 100%;padding: 20px 0;border: 0;
+        font-size: 14px;
+        line-height: 20px;
+        &:nth-of-type(1){
+          border-bottom: 1px solid rgba(75,119,175,0.20);
+        }
+      }
+
+    }
+  }
+  .calendar{ // 日期横幅展示样式
+    display: flex;justify-content:space-between;height: 66px;background-color: $blue;color: #fff;
+    font-size: 15px;line-height: 66px; width:100%;
+    span:not(:nth-of-type(2)){ display: inline-block; padding: 0 26px;
+      & img{vertical-align: middle; width: 8px;height: 15px;}
+    }
+    span:last-child{ img{ transform:  rotate(-180deg); } }
+  }
+  .vanNavBar{ // 顶部vant导航样式
+    height:60px;border-bottom:10px solid #ececec;
+    .van-nav-bar__left,.van-nav-bar__left>div{
+      height: 100%;display: flex;align-items: center;color: #007AFF;
+    }
+    .van-nav-bar__right,.van-nav-bar__right>div{
+      height: 100%;display: flex;align-items: center;color: #007AFF;
+    }
+    .van-nav-bar__title{
+      height: 100%;
+      &>div{
+        height: 100%;padding-top:10px; box-sizing: border-box;
+        .title_h3{
+          height: 24px;
+          font-size:17px;
+          font-family:PingFang-SC-Bold,PingFang-SC;
+          font-weight:bold;
+          color:rgba(72,72,72,1);
+          line-height:24px;
+          position: relative;
+        }
+        .title_span{
+          margin:0 auto;
+          width:200px;
+          height:17px;
+          font-size:12px;
+          font-family:PingFangSC-Regular,PingFang SC;
+          font-weight:400;
+          color:rgba(72,72,72,1);
+          line-height:17px;
+        }
+      }
+    }
+  }
+}
+
+.main{
+  // position: absolute;left: 0;right: 0;bottom: 0;top:120px;overflow-y: scroll;
+  // 新增样式 end
+  padding: 11px;background: #fff;
+  .title{
+    height:17px;
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(72,72,72,1);
+    line-height:17px;
+    border-bottom: 1px solid #4B77AF;padding-bottom:2px;
+    display: flex;align-items:center;
+    // vertical-align: middle;
+
+    &>span:first-child{ margin-right: 10px; }
+    .van-image{
+      // margin-left: 10px;
+      padding: 0 7px;
+    }
+  }
+  .itemText{
+    display: flex;justify-content: flex-start;align-items:center;position:relative;
+    &>.itemTextTitle{ letter-spacing:12px;
+      width:16px;
+      height:34px;
+      font-size:12px;
+      font-family:PingFang-SC-Regular,PingFang-SC;
+      font-weight:400;
+      color:rgba(75,119,175,0.2);
+      line-height:17px;
+    }
+    &>.popupUp{ position:absolute; }
+    // &>.popupDown{}
+
+  }
+  .itemUp{ padding-top: 5px; }
+
+  .main_body {
+    //li 中除了标题的包裹框
+    position: relative;
+    .circleBut {
+      // 圆形审阅按钮样式
+      // background: rgb(75, 119, 175);
+      background: #fff;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      color: #000;
+      // box-shadow:0px 0px 8px 0px rgba(155,195,238,0.3);
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      // z-index: 1;
+    }
+  }
+}
+
+#opinion{ // 管理者意见样式
+  // background: #fff;
+  background:rgba(244,244,244,1); // UI图样式
+  padding-top: 8px;
+  // height: 180px; UI图样式
+  min-height: 150px;
+  padding-bottom:17px;
+  &::before{ content: "";margin-left:9px;width:6px;height: 20px;background: #367EF4;display: block;float: left; }
+  &>h3{
+    margin: 0;float: left;padding-bottom: 5px;border-bottom: 2px solid #4B77AF;margin-left: 12px;
+  }
+  // 12px
+  &>div{
+    background: rgba(255,255,255,1);border-radius:6px;box-shadow:0px 2px 10px 0px rgba(199,197,197,0.5); // 新增UI样式
+    margin-top: 42px;
+    // padding: 0 22px 0 27px;
+    padding: 0 10px;
+    padding-top: 5px;
+    min-height:120px;
+    &>div{
+      &>h5{
+        font-size:12px;
+        font-weight:500;
+        color:rgba(72,72,72,1);
+        line-height: 30px;
+        border-bottom: 1px solid #4B77AF  ;
+        margin-bottom: 5px;
+      }
+      width: 50%;position: relative;
+      padding-bottom: 20px;
+      // width: 100%;
+      // height: 100%;
+      box-sizing: border-box;
+      p{
+        height: 60px;font-size:12px;line-height:2;letter-spacing: -0.24px;overflow: scroll;
+        .err{ color: #D75252; }
+      }
+      &>div{
+        font-size:12px;line-height:17px;text-align: right;
+        // position: absolute;top: 60px;
+        position: relative;
+        width: 100%;
+        &>div.disagree{ position: absolute;left: 0px;bottom:0px;text-align: left;width: 40px; }
+      }
+    }
+    &>div:nth-of-type(1){
+      // float: left;
+      // padding-right: 10px;
+      border-right: 1px solid rgba(75,119,175,0.20);
+    }
+    &>div:nth-of-type(2){ float: right;padding-left: 15px; }
+  }
+}
+#transpond{ // 转发样式
+  .item{
+    display:flex;justify-content: space-between;
+    .item_c{ h4{display: inline-block;margin: 0;} }
+  }
+}
+#tabDiv{ // 轮播界面样式
+  background:#ececec; position: relative;
+  // 新增样式
+  width:100%;position:fixed;top:70px;bottom:0;left:0;right:0;z-index: 1;
+  // overflow-y: scroll;
+  // padding-bottom: 64px;
+}
+// 轮播样式
+.moveLeft{
+  transform: translate3d(-100%, 0px, 0px); transition-duration: 0.3s;
+}
+.moveRight{
+  transform: translate3d(100%, 0px, 0px); transition-duration: 0.3s;
+}
