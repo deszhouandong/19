@@ -22,7 +22,7 @@
     "html2canvas": "^1.0.0-rc.5",
     "js-md5": "^0.7.3",
     "lib-flexible": "^0.3.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lrz": "^4.9.40",
     "mint-ui": "^2.2.13",
     "qrcodejs2": "0.0.2",
